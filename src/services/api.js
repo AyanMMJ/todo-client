@@ -1,9 +1,7 @@
 import axios from "axios";
 
 // API Base URL - Change this to your local server when using MongoDB Compass
-const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? 'https://todo-app-server-eosin.vercel.app/api'
-  : 'http://localhost:5000/api';
+const API_BASE_URL = 'https://todo-app-server-eosin.vercel.app/api';
 
 // Create axios instance with default config
 const api = axios.create({
